@@ -17,7 +17,7 @@ public class Principal {
 			op = new Operacion(n1, n2);
 			do {
 			System.out.println("Introduce la operación que deseas realizar");
-			System.out.println("Suma, Resta, multiplicacion o division");
+			System.out.println("Suma, Resta, multiplicacion, division o Potenciacion");
 			x = stdin.readLine();
 		
 			switch (x.toLowerCase()) {
@@ -33,7 +33,9 @@ public class Principal {
 			case "division":
 				System.out.println(op.division(op));
 				break;
-
+			case "potenciacion":
+				System.out.println(op.potenciacion(op));
+				break;
 			default:
 				System.out.println("Error");
 				break;

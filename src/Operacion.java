@@ -1,4 +1,5 @@
-
+import java.lang.Math.*;
+@SuppressWarnings("unused")
 public class Operacion {
 	private double a;
 	private double b;
@@ -48,6 +49,12 @@ public class Operacion {
 		div=getA()/getB();
 		return div;
 	}
-
+	public double potenciacion(Operacion a) {
+		double pot=0;
+		pot=Math.pow(getA(),getB());
+		
+		return pot;
+		
+	}
 }
 
